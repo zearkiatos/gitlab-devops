@@ -35,7 +35,7 @@ test-apps:
 build-app:
   stage: build
   variables:
-    BUILD_CONFIGURATION: 'stage'
+    BUILD_CONFIGURATION: 'production'
   dependencies:
     - install-dependencies
   script:
@@ -56,6 +56,6 @@ pages:
     paths:
       - public
   environment:
-    name: stage
+    name: production
   only:
     - branches
