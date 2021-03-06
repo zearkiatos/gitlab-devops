@@ -35,7 +35,7 @@ test-apps:
 build-app:
   stage: build
   variables:
-    BUILD_CONFIGURATION: 'staging'
+    BUILD_CONFIGURATION: 'stage'
   dependencies:
     - install-dependencies
   script:
